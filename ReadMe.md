@@ -1,3 +1,2 @@
 # Installation && Execution
-yarn
-yarn dev
+yarn && yarn dev
