@@ -6,14 +6,14 @@ import masterCardIcon from "../assets/svgs/mastercard-desinged.svg";
 
 const OrderSummary = () => {
   return (
-    <div className="w-[30%] h-full relative pt-24">
+    <div className="w-full md:w-[30%] h-full relative pt-10 md:pt-24 md:pb-0">
       {/* Blue banner */}
       <div className="absolute -top-1 left-1/2 transform -translate-x-1/2 w-16 h-8 bg-primary rounded-sm"></div>
 
       {/*  */}
       {/*  */}
       {/* Mastercard card Design */}
-      <div className="h-72 w-[75%] mx-auto absolute top-0 left-1/2 transform -translate-x-1/2 rounded-xl shadow-md pt-8 pb-6 px-6 overflow-hidden bg-white/75 backdrop-blur-md flex flex-col justify-between items-start bg-cover bg-center">
+      <div className="h-48 md:h-72 w-[90%] md:w-[75%] mx-auto absolute top-0 left-1/2 transform -translate-x-1/2 rounded-xl shadow-md pt-4 md:pt-8 pb-2 md:pb-6 px-6 overflow-hidden bg-white/75 backdrop-blur-md flex flex-col justify-between items-start bg-cover bg-center">
         {/*  */}
         {/* Circle overlays */}
         <div className="rounded-full border-2 border-gray-blue w-[500px] h-[500px] absolute -bottom-[250px] -right-[190px] flex justify-center items-center">
@@ -26,14 +26,14 @@ const OrderSummary = () => {
           <img
             src={creditCardChip}
             alt="credit-card-chip-icon"
-            className="h-11 w-11 rounded-full rotate-90"
+            className="h-8 md:h-11 w-8 md:w-11 rounded-full rotate-90"
           />
 
-          <RiWifiFill className="text-4xl text-secondary" />
+          <RiWifiFill className="text-3xl md:text-4xl text-secondary" />
         </div>
 
         {/* Card owners info */}
-        <div className="gap-4 flex flex-col w-full z-10">
+        <div className="gap-0 md:gap-4 flex flex-col w-full z-10">
           {/* Name and card number */}
           <div className="w-full">
             <p className="text-secondary font-medium text-sm">
@@ -59,9 +59,9 @@ const OrderSummary = () => {
       {/*  */}
       {/*  */}
       {/* Order summary */}
-      <div className="h-full bg-gray-blue rounded-xl pt-60 space-y-8">
+      <div className="h-max md:h-full bg-gray-blue rounded-xl pt-44 md:pt-60 space-y-6 md:space-y-8 pb-4 md:pb-0">
         {/* Order info summary */}
-        <div className="w-full space-y-4 px-8">
+        <div className="w-full space-y-4 px-6 md:px-8">
           {/* Company info */}
           <div className="flex justify-between items-center w-full">
             <span className="font-medium text-dark-gray text-sm">Company</span>
@@ -101,11 +101,11 @@ const OrderSummary = () => {
 
         {/* Styles receipt punch holes */}
         <div className="flex justify-between items-center w-full relative">
-          <div className="h-8 w-8 bg-white rounded-full absolute -left-4"></div>
+          <div className="h-6 md:h-8 w-6 md:w-8 bg-white rounded-full absolute -left-2 md:-left-4"></div>
 
           <hr className="border-dashed border-2 border-dark-gray w-full" />
 
-          <div className="h-8 w-8 bg-white rounded-full absolute -right-4"></div>
+          <div className="h-6 md:h-8 w-6 md:w-8 bg-white rounded-full absolute -right-2 md:-right-4"></div>
         </div>
 
         {/* Total Payment */}
@@ -124,6 +124,16 @@ const OrderSummary = () => {
 
           <IoReceiptSharp className="text-secondary text-2xl rotate-180" />
         </div>
+      </div>
+
+      {/*  */}
+      <div className="my-5 md:hidden box-border">
+        <button
+          type="submit"
+          className="capitalize w-full p-4 bg-primary text-center text-white rounded-md hover:bg-primary/95 font-bold focus:outline-none border-none"
+        >
+          Pay Now
+        </button>
       </div>
     </div>
   );
