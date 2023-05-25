@@ -1,4 +1,7 @@
+import CVVNumber from "./CVVNumber";
 import CardNumberInputField from "./CardNumberInputField";
+import CardPassword from "./CardPassword";
+import ExpiryDate from "./ExpiryDate";
 import Logo from "./ui/Logo";
 import TimeClock from "./ui/TimeClock";
 import { MdModeEdit } from "react-icons/md";
@@ -14,8 +17,8 @@ const CardDetails = () => {
           <TimeClock />
         </div>
 
-        {/* Card Number container */}
-        <div className="mt-8">
+        {/* Card number container */}
+        <div className="mt-10">
           <div className="flex justify-between items-center">
             {/* Card Num. text */}
             <div className="space-y-2">
@@ -39,41 +42,31 @@ const CardDetails = () => {
             <CardNumberInputField />
           </div>
         </div>
+
+        {/* CVV number container */}
+        <div className="mt-10">
+          <CVVNumber />
+        </div>
+
+        {/* Expiry date container */}
+        <div className="mt-10">
+          <ExpiryDate />
+        </div>
+
+        {/* Card password container */}
+        <div className="mt-10">
+          <CardPassword />
+        </div>
+
+        {/* Pay now button */}
+        <div className="mt-10">
+          <button className="capitalize w-full p-4 bg-primary text-center text-white rounded-md hover:bg-primary/95 font-bold">
+            Pay Now
+          </button>
+        </div>
       </div>
     </div>
   );
 };
 
 export default CardDetails;
-
-//   const formatCardNumber = (input: string): string => {
-//     // Remove any non-digit characters from the input
-//     const cleanedInput = input.replace(/\D/g, "");
-
-//     // Split the cleaned input into groups of four digits
-//     const groups = cleanedInput.match(/.{1,4}/g);
-
-//     // Join the groups with a space in between
-//     if (groups) {
-//       return groups.join("-");
-//     } else {
-//       return cleanedInput;
-//     }
-//   };
-
-//   const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
-//     const input = event.target.value;
-//     const formattedInput = formatCardNumber(input);
-//     setCardNumber(formattedInput);
-//   };
-
-{
-  /* <input
-          type="text"
-          id="cardNumber"
-          className="border-none outline-none w-full tracking-widest"
-          value={cardNumber}
-          onChange={handleChange}
-          maxLength={19} // Maximum length of formatted card number: 4 groups of 4 digits + 3 spaces
-        /> */
-}

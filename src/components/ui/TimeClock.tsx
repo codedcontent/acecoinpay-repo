@@ -27,7 +27,7 @@ const TimeClock = () => {
 
   const TimeBox = ({ time }: { time: string }) => {
     return (
-      <div className="bg-secondary p-1.5 rounded-md">
+      <div className="bg-secondary py-1.5 px-2 rounded-md">
         <span className="text-white font-semibold">{time}</span>
       </div>
     );

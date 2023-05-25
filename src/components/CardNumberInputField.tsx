@@ -2,11 +2,7 @@ import { useState } from "react";
 import masterCardOriginal from "../assets/svgs/mastercard-plain.svg";
 import { MdVerified } from "react-icons/md";
 
-interface Props {
-  cardType?: "mastercard" | "verve";
-}
-
-const CardNumberInputField = ({ cardType }: Props) => {
+const CardNumberInputField = () => {
   const [cardNumber, setCardNumber] = useState<string>("");
 
   const formatCardNumber = (input: string): string => {
@@ -31,7 +27,7 @@ const CardNumberInputField = ({ cardType }: Props) => {
   };
 
   return (
-    <div className="w-full border-2 border-gray-200 rounded-md px-4 py-3 flex justify-between items-center gap-4">
+    <div className="w-full border-2 border-gray-200 rounded-md px-4 py-3 flex justify-between items-center gap-6">
       {/* Card type logo */}
       <img
         src={masterCardOriginal}

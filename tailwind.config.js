@@ -16,6 +16,9 @@ export default {
       fontFamily: {
         sans: ["Montserrat", ...defaultTheme.fontFamily.sans],
       },
+      backgroundImage: {
+        grainy: "url('/public/images/grunge-style-dusty-overlay-texture.jpg')",
+      },
     },
   },
   plugins: [],

@@ -1,4 +1,5 @@
 import CardDetails from "./components/CardDetails";
+import OrderSummary from "./components/OrderSummary";
 
 const App = () => {
   return (
@@ -7,7 +8,7 @@ const App = () => {
       <CardDetails />
 
       {/* Order Summary */}
-      <div className="w-[30%] h-80 bg-red-600"></div>
+      <OrderSummary />
     </main>
   );
 };
