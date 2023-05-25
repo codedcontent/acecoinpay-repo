@@ -18,7 +18,7 @@ const CardDetails = () => {
         </div>
 
         {/* Card number container */}
-        <div className="mt-10">
+        <div className="mt-14">
           <div className="flex justify-between items-center">
             {/* Card Num. text */}
             <div className="space-y-2">
@@ -60,7 +60,10 @@ const CardDetails = () => {
 
         {/* Pay now button */}
         <div className="mt-10">
-          <button className="capitalize w-full p-4 bg-primary text-center text-white rounded-md hover:bg-primary/95 font-bold">
+          <button
+            type="submit"
+            className="capitalize w-full p-4 bg-primary text-center text-white rounded-md hover:bg-primary/95 font-bold focus:outline-none border-none"
+          >
             Pay Now
           </button>
         </div>

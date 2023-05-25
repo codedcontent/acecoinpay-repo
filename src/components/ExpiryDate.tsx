@@ -12,23 +12,19 @@ const ExpiryDate = () => {
 
       {/* Expiry date text field */}
       <div className="flex gap-2 items-center justify-center w-1/2">
-        <div className="flex items-center justify-center border-2 border-gray-200 rounded-md px-4 py-3">
-          <input
-            type="text"
-            className="flex-1 border-none outline-none text-center w-full text-secondary font-bold"
-            maxLength={2}
-          />
-        </div>
+        <input
+          type="text"
+          className="flex-1 focus:outline-none text-center w-full text-secondary font-bold focus:bg-primary/5 focus:ring-2 ring-primary border-2 border-gray-200 rounded-md px-4 py-3"
+          maxLength={2}
+        />
 
         <span className="font-semibold text-medium">/</span>
 
-        <div className="flex items-center justify-center border-2 border-gray-200 rounded-md px-4 py-3">
-          <input
-            type="text"
-            className="flex-1 border-none outline-none text-center w-full text-secondary font-bold"
-            maxLength={2}
-          />
-        </div>
+        <input
+          type="text"
+          className="flex-1 focus:outline-none text-center w-full text-secondary font-bold focus:bg-primary/5 focus:ring-2 ring-primary border-2 border-gray-200 rounded-md px-4 py-3"
+          maxLength={2}
+        />
       </div>
     </div>
   );

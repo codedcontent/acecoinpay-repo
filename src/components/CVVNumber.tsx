@@ -13,7 +13,7 @@ const CVVNumber = () => {
       </div>
 
       {/* CVV number text field */}
-      <div className="flex items-center justify-center w-1/2 border-2 border-gray-200 rounded-md px-4 py-3">
+      <div className="flex items-center justify-center w-1/2 border-2 border-gray-200 rounded-md px-4 py-3 focus-within:ring-2 focus-within:ring-primary focus-within:outline-none">
         <input
           type="text"
           className="flex-1 border-none outline-none text-center w-full text-secondary font-bold"

@@ -11,10 +11,10 @@ const CardPassword = () => {
       </div>
 
       {/* CVV number text field */}
-      <div className="flex items-center justify-center w-1/2 border-2 border-gray-200 rounded-md px-4 py-3 gap-4">
+      <div className="flex items-center justify-center w-1/2 border-2 border-gray-200 rounded-md px-4 py-3 gap-4 focus-within:ring-2 focus-within:ring-primary focus-within:outline-none">
         <input
           type="password"
-          className="flex-1 border-none outline-none text-center w-full text-secondary font-bold"
+          className="flex-1 outline-none text-center w-full text-secondary font-bold"
           maxLength={8}
         />
 
